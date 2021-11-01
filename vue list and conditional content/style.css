@@ -1,0 +1,40 @@
+*{
+    text-align: center;
+   }
+   h1{
+    background-color: black;
+    color: lawngreen;
+    font-style: inherit;
+    font-size: 3rem;
+    padding: 0.5rem;
+    margin: auto;
+    border-radius: 2rem;
+   }
+   section{
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    border: 0.25rem solid #000;
+   }
+   input{
+    border: 0.25rem solid #000;
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+    margin: 1rem;
+   }
+   .hide, .show {
+    display: none;
+   }
+   
+   button{
+    background-color: black;
+    color: lawngreen;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+   }
+   ul{
+    background-color: black;
+    color: lawngreen;
+    border-radius: 2rem;
+    padding: 0.25rem;
+   }

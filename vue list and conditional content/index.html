@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  <header>
+   <h1>Vue List and Conditional Content </h1>
+  </header>
+  
+  <section id="list">
+   <div id="app">
+   
+   <input type="text" v-model="enteredTask">
+   <button v-on:click="addtask"> Add Task</button>
+   <p v-if="task.length === 0"> No Task has been added yet... please add some Task</p>
+   <ul v-else>
+    <li v-show="hideShow" v-for="Task in task">{{Task}}</li>
+   </ul>
+   
+  <button 
+  
+     @click="hideShow ^= true"
+    class="Hide and Show"
+  >
+    <span :class="{hide: !hideShow}">Hide List</span>
+    
+   <span :class="{show:  hideShow}">Show List</span> 
+  </button>
+</div>
+  </section>
+
+  
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <script src="https://unpkg.com/vue@3.2.20"></script>
+
+  <script src="main.js"></script>
+</body>
+</html>
